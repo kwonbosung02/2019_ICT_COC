@@ -112,12 +112,16 @@ ES = EarlyStopping(
     patience=10
 )
 MC = ModelCheckpoint(
-    'VGG16 Garbage Classifier.h5',
+    'VGG16 Garbage Classifier.pb',
     monitor='val_acc',
     mode='max',
     verbose=1,
     save_best_only=True
 )
+
+logdir="logs/fit/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+tensorboard_callback = keras.callbacks.TensorBoard(log_dir=logdir)
+
 
 history = model.fit_generator(
     train_generator,
@@ -126,7 +130,7 @@ history = model.fit_generator(
     validation_data=validataion_generator,
     validation_steps=validataion_generator.samples/validataion_generator.batch_size,
     verbose=0,
-    callbacks=[ES, MC,],
+    callbacks=[ES, MC, tensorboard_callback],
 )
 
 ##################################################################

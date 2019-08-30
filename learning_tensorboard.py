@@ -3,6 +3,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+from tensorflow.python.tools import freeze_graph
 
 import numpy as np
 import pandas as pd
@@ -109,10 +110,10 @@ ES = EarlyStopping(
     monitor='val_loss',
     mode='min',
     verbose=1,
-    patience=10
+    patience=7
 )
 MC = ModelCheckpoint(
-    'VGG16 Garbage Classifier.pb',
+    'VGG16 Garbage Classifier.h5',
     monitor='val_acc',
     mode='max',
     verbose=1,
@@ -126,19 +127,62 @@ tensorboard_callback = keras.callbacks.TensorBoard(log_dir=logdir)
 history = model.fit_generator(
     train_generator,
     steps_per_epoch=train_generator.samples/train_generator.batch_size,
-    epochs=50,
+    epochs=6,
     validation_data=validataion_generator,
     validation_steps=validataion_generator.samples/validataion_generator.batch_size,
     verbose=0,
     callbacks=[ES, MC, tensorboard_callback],
 )
 
+#################
+model_json = model.to_json()
+with open("model.json", "w") as json_file:
+    json_file.write(model_json)
+#################
+
+
+
+'''
+freeze_graph.freeze_graph('tensorflowModel.pbtxt', "", False,
+                          './tensorflowModel.ckpt', "output/softmax",
+                           "save/restore_all", "save/Const:0",
+                           'frozentensorflowModel.pb', True, ""
+                         )
+                         '''
+
 ##################################################################
+
 train_acc = history.history['acc']
 val_acc = history.history['val_acc']
 train_loss = history.history['loss']
 val_loss = history.history['val_loss']
 
+epochs = range(1, len(train_acc) + 1)
+
+plt.plot(epochs, train_acc, 'b*-', label = 'Training')
+plt.plot(epochs, val_acc, 'r', label = 'Validation')
+
+plt.legend()
+
+plt.figure()
+
+plt.plot(epochs, train_loss, 'b*-', label = 'Training')
+plt.plot(epochs, val_loss, 'r', label = 'Validation')
+plt.title('loss')
+plt.legend()
+
+plt.show()
+'''
+with tensorflow.Graph().as_default():
+    with tensorflow.Session() as sess:
+
+        # Initialize all variables
+        init = tensorflow.global_variables_initializer()
+        sess.run(init)
+        saver = tensorflow.train.Saver()
+        saver.save(sess, './tensorflowModel.ckpt')
+        tensorflow.train.write_graph(sess.graph.as_graph_def(), '.', 'tensorflowModel.pbtxt', as_text=True)
+'''
 
 
 

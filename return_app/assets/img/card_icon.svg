@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="39" viewBox="0 0 66 39">
+  <defs>
+    <clipPath id="clip-card_icon">
+      <rect width="66" height="39"/>
+    </clipPath>
+  </defs>
+  <g id="card_icon" clip-path="url(#clip-card_icon)">
+    <g id="그룹_5" data-name="그룹 5">
+      <rect id="사각형_43" data-name="사각형 43" width="64" height="37" rx="5" fill="#a8c8ff"/>
+      <rect id="사각형_44" data-name="사각형 44" width="64" height="8" transform="translate(0 5)" fill="#fff"/>
+      <rect id="사각형_45" data-name="사각형 45" width="11" height="4" transform="translate(4 27)" fill="#fff"/>
+      <rect id="사각형_46" data-name="사각형 46" width="12" height="4" transform="translate(17 27)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

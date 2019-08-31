@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="39" viewBox="0 0 54 39">
+  <defs>
+    <clipPath id="clip-coffee_icon">
+      <rect width="54" height="39"/>
+    </clipPath>
+  </defs>
+  <g id="coffee_icon" clip-path="url(#clip-coffee_icon)">
+    <path id="coffee-solid" d="M14.577,60.656H29.206a7.579,7.579,0,0,0,7.314-7.815h2.438c5.379,0,9.753-4.673,9.753-10.42S44.338,32,38.959,32H9.091a1.89,1.89,0,0,0-1.829,1.954V52.841A7.579,7.579,0,0,0,14.577,60.656ZM38.959,37.21a5.222,5.222,0,0,1,0,10.42H36.52V37.21Zm3.634,31.261H3.628c-3.627,0-4.648-5.21-2.743-5.21H45.328c1.9,0,.9,5.21-2.735,5.21Z" transform="translate(2.056 -30.227)" fill="#a8c8ff"/>
+  </g>
+</svg>

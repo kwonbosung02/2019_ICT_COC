@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="39" viewBox="0 0 54 39">
+  <defs>
+    <clipPath id="clip-store_icon">
+      <rect width="54" height="39"/>
+    </clipPath>
+  </defs>
+  <g id="store_icon" clip-path="url(#clip-store_icon)">
+    <path id="store-alt-solid" d="M23.008,27.552H9.232V16.072H4.64V34.44a2.294,2.294,0,0,0,2.3,2.3H25.3a2.294,2.294,0,0,0,2.3-2.3V16.072H23.008ZM45.58,10.2,39.46,1.019A2.309,2.309,0,0,0,37.544,0H8.471A2.287,2.287,0,0,0,6.562,1.019L.442,10.2a2.3,2.3,0,0,0,1.909,3.573H43.672A2.3,2.3,0,0,0,45.58,10.2Zm-8.8,25.385a1.151,1.151,0,0,0,1.148,1.148h2.3a1.151,1.151,0,0,0,1.148-1.148V16.072H36.784Z" transform="translate(4.032 1.509)" fill="#a8c8ff"/>
+  </g>
+</svg>

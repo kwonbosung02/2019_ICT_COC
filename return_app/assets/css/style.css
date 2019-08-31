@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+}
+body {
+    font-family: 'Spoqa Han Sans', serif!important;
+    margin: 0;
+}
+a {
+    color: #000;
+}
+
+/* Resister */
+.Resister {
+    width: 100vw;
+    height: 100vh;
+}
+.Resister .top-input-area {
+    width: 100%;
+    height: 100%;
+    padding: 90px 37px;
+    box-sizing: border-box;
+}
+.Resister .top-input-area .input-box {
+
+}
+.Resister .top-input-area .input-box .title {
+    font-size: 23px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.Resister .top-input-area .input-box .sub {
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 55px;
+}
+.Resister .top-input-area .input-box .input {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    padding: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+.Resister .bottom-btn-area {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.Resister .bottom-btn-area .next-btn {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    background-color: #679eff;
+    border: 0;  
+}
+
+/* Login */
+.Login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Login .login_box {
+    width: 75%;
+    margin-top: 45px;
+    text-align: center;
+}
+.Login .login_box .logo-img {
+    width: 150px;
+    margin-bottom: 48px;
+}
+.Login .login_box .input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000;
+    padding: 6px 12px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.Login .login_box .login-btn {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    height: 52px;
+    background-color: #679eff;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* main */
+.Main {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.Main .main_box {
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.Main .main_box .describe {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Main .main_box .point_box {
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 17px 15px 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.Main .main_box .point_box .top_box {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 9px;
+}
+.Main .main_box .point_box .top_box .title {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0;
+}
+.Main .main_box .point_box .bottom_box {
+    display: inline-block;
+    width: 100%;
+
+}
+.Main .main_box .point_box .bottom_box .point {
+    font-weight: 600;
+    display: inline-block;
+    float: left;
+}
+.Main .main_box .point_box .bottom_box .use-btn {
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+    background-color: #f5f5f5;
+    color: #808993;
+    padding: 7px 17px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.Main .main_box .qrcode_wrap {
+    display: inline-block;
+    width: 92%;
+}
+.Main .main_box .qrcode_box {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.Main .main_box .qrcode_box .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.Main .main_box .qrcode_box .inner .frame {
+    position: absolute;
+    width: 21%;
+}
+.Main .main_box .qrcode_box .inner .frame.left_top {
+    left: 0;
+    top: 0;
+}
+.Main .main_box .qrcode_box .inner .frame.left_bottom {
+    left: 0;
+    bottom: 0;
+}
+.Main .main_box .qrcode_box .inner .frame.right_top {
+    right: 0;
+    top: 0;
+}
+.Main .main_box .qrcode_box .inner .frame.right_bottom {
+    right: 0;
+    bottom: 0;
+}
+.Main .main_box .qrcode_box .inner .icon {
+    width: 22%;
+}
+.Main .main_box .qrcode_box .inner .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.Main .main_box .qrcode_box .inner .sub {
+    font-size: 13px;
+    margin: 0;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.btn:first-child a {
+    text-decoration: none;
+    color: #0006b7;
+}
+/* store */
+.Store {
+    width: 100vw;
+    height: 100vh;
+}
+.Store .top_bar {
+    position: fixed;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+}
+.Store .top_bar .back_btn {
+    width: 24px;
+    margin-right: 10px;
+}
+.Store .top_bar .text {
+    font-size: 26px;
+    font-weight: 600;
+}
+.Store .Store_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 60px;
+}
+.Store .Store_box .header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.Store .Store_box .header .text-area {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+.Store .Store_box .header .text-area .text {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.Store .Store_box .header .img-area {
+    display: inline-block;
+    width: 70%;
+}
+.Store .Store_box .header .img-area .img {
+    width: 100%;
+}
+.Store .Store_box .point_box {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 18px 25px 18px 20px;
+    border-radius: 8px;
+    margin-bottom: 26px;
+}
+.Store .Store_box .point_box .title {
+    font-weight: 600;
+    font-size: 17px;
+    float: left;
+}
+.Store .Store_box .point_box .point {
+    font-size: 17px;
+    font-weight: 600;
+    float: right;
+}
+.Store .Store_box .btn_box {
+    width: 100%;
+}
+.Store .Store_box .btn_box .row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 14px;
+}
+.Store .Store_box .btn_box .row .btn {
+    color: #0006b7;
+    font-weight: 600;
+    flex: 1;
+    margin-right: 14px;
+    background-color: #f1f8ff;
+    border-radius: 7px;
+    padding: 18px 10px 14px 14px;
+}
+.Store .Store_box .btn_box .row .btn:last-child {
+    margin-right: 0;
+}
+.Store .Store_box .btn_box .row .btn .img_area {
+    width: 100%;
+    display: inline-block;
+}
+.Store .Store_box .btn_box .row .btn .img_area .img {
+    float: right;
+}
+
+/* Reward */
+.Reward {
+    width: 100vw;
+    height: 100vh;
+    padding: 35px 35px 40px 35px;
+    box-sizing: border-box;
+}
+.Reward .reward_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Reward .reward_box .top_box {
+    height: 71%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.Reward .reward_box .top_box .check_icon {
+    width: 85px;
+    margin-bottom: 24px;
+}
+.Reward .reward_box .top_box .title {
+    font-size: 25px;
+    margin: 0
+}
+.Reward .reward_box .top_box .sub {
+    margin-top: 7px;
+    font-size: 17px;
+}
+.Reward .reward_box .bottom_box {
+
+}
+.Reward .reward_box .bottom_box .sec {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Reward .reward_box .bottom_box .sec .title {
+    float: left;
+}
+.Reward .reward_box .bottom_box .sec .value {
+    font-weight: 600;
+    float: right;
+}
+.Reward .reward_box .bottom_box .btn_box {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.Reward .reward_box .bottom_box .btn_box .btn {
+    flex: 1;
+    text-align: center;
+    margin-right: 12px;
+    padding: 12px 0;
+    background-color: #f1f8ff;
+    color: #0006b7;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.Reward .reward_box .bottom_box .btn_box .btn:last-child {
+    margin-right: 0;
+    background-color: #679eff;
+    color: #fff;
+}
+
+/* QrCode */
+.Qrcode {
+    width: 100vw;
+    height: 100vh;
+}
+.Qrcode .qrcode_reader {
+    width: 100%;
+    height: 100%;
+}
+.Qrcode .qrcode_reader .inside {
+    width: 100%;
+    height: 100%;
+}
+.Qrcode .qrcode_reader .inside video {
+    width: 100%;
+    height: 100%;
+}
+.Qrcode .bottom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 16px;
+    background-color: #679eff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Qrcode .aim_box {
+    position: fixed;
+    top: calc(50% - 190px);
+    right: calc(50% - 140px);
+    width: 280px;
+    height: 280px;
+    z-index: 100;
+}
+.Qrcode .aim_box .frame {
+    position: absolute;
+    width: 22%;
+}
+.Qrcode .aim_box .frame.left-top {
+    top: 0;
+    left: 0;
+}
+.Qrcode .aim_box .frame.right-top {
+    top: 0;
+    right: 0;
+}
+.Qrcode .aim_box .frame.left-bottom {
+    bottom: 0;
+    left: 0;
+}
+.Qrcode .aim_box .frame.right-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.Trashcan {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Trashcan .btn {
+    text-align: center;
+    width: 60%;
+    padding: 12px 0;
+    background-color: #f1f8ff;
+    color: #0006b7;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #679eff;
+    color: #fff;
+    text-decoration: none;
+}

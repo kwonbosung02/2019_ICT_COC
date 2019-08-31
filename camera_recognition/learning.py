@@ -11,6 +11,7 @@ import seaborn as sns
 import tensorflow
 import tensorboard
 import keras
+
 print("Tensorflow Version",tensorflow.__version__)
 
 
